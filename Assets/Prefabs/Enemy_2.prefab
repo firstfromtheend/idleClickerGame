@@ -10,10 +10,10 @@ PrefabInstance:
     - target: {fileID: 167508193944809387, guid: 358b2a84a1d23544dbd920ec69d65af6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 23ca82ecf6ab21f45a4f71c0cbcc70f7, type: 3}
+      objectReference: {fileID: 21300000, guid: 0f888e16fa1c9df428bad1677cc57a92, type: 3}
     - target: {fileID: 167508194457651349, guid: 358b2a84a1d23544dbd920ec69d65af6, type: 3}
       propertyPath: m_Name
-      value: Base enemy 1
+      value: Enemy_2
       objectReference: {fileID: 0}
     - target: {fileID: 167508194457651370, guid: 358b2a84a1d23544dbd920ec69d65af6, type: 3}
       propertyPath: m_Pivot.x
