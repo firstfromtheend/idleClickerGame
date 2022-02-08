@@ -426,7 +426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   autoClicksLastTime: []
   autoClickerCounter: {fileID: 1419158041}
-  autoClickerPrice: 1
+  autoClickerPrice: 10
 --- !u!1 &551854892
 GameObject:
   m_ObjectHideFlags: 0
