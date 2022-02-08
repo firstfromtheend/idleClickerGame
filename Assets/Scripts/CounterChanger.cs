@@ -6,9 +6,15 @@ using TMPro;
 
 public class CounterChanger : MonoBehaviour
 {
+    public static CounterChanger instance;
     [SerializeField] public int[] clickerToBuy = new int[] { 1, 5, 10, 25 };
     private int indexForClickerToBuy = 0;
     public TextMeshProUGUI counterText;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
@@ -26,7 +32,7 @@ public class CounterChanger : MonoBehaviour
         counterText.text = "Auto-clicker to buy: " + clickerToBuy[indexForClickerToBuy].ToString();
     }
 
-    public int GetCounterQuantity()
+    public int GetCleckerQuantity()
     {
         return clickerToBuy[indexForClickerToBuy];
     }

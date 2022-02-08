@@ -24,10 +24,14 @@ public class ClickManager : MonoBehaviour
 
     public void OnByAutoClicker()
     {
-        if (GameManager.instance.gold >= autoClickerPrice)
+        int clickerQantity = CounterChanger.instance.GetCleckerQuantity();
+        if (GameManager.instance.gold >= autoClickerPrice * clickerQantity)
         {
-            GameManager.instance.TakeGold(autoClickerPrice);
-            autoClicksLastTime.Add(Time.time);
+            GameManager.instance.TakeGold(autoClickerPrice * clickerQantity);
+            for (int i = 0; i < clickerQantity; i++)
+            {
+                autoClicksLastTime.Add(Time.time);
+            }
 
             autoClickerCounter.text = "X" + autoClicksLastTime.Count.ToString();
         }

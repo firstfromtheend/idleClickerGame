@@ -13,6 +13,7 @@ public class EnemyManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        CreateNewEnemy();
     }
 
     public void CreateNewEnemy()
